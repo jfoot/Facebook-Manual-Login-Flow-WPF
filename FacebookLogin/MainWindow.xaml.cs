@@ -3,9 +3,6 @@ using System.Windows;
 
 namespace FacebookLogin
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         ApiResults ResultsData = new ApiResults();
