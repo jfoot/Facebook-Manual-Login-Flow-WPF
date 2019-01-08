@@ -5,9 +5,6 @@ using System.Windows.Navigation;
 
 namespace FacebookLogin
 {
-    /// <summary>
-    /// Interaction logic for FBDialog.xaml
-    /// </summary>
     public partial class FBDialog : Window
     {
         private string p_appID;
@@ -28,7 +25,6 @@ namespace FacebookLogin
             string scopes = WebUtility.UrlEncode(p_scopes);
             FBwebBrowser.Source = new Uri(string.Format("https://www.facebook.com/dialog/oauth?client_id={0}&redirect_uri={1}&response_type=token%2Cgranted_scopes&scope={2}&display=popup", new object[] { p_appID, returnURL, scopes }));
             FBwebBrowser.Navigated += FBwebBrowser_Navigated;
-
         }
 
         private void FBwebBrowser_Navigated(object sender, NavigationEventArgs e)
