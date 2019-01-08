@@ -1,4 +1,15 @@
-# Facebook-API-login-flow-for-desktop-application
-When developing desktop applications that interacts with Facebook you have to implement the login flow your self. After the login flow completes you can use the normal Facebook SDK libraries by supplying it with the access token your received. When implementing the login flow you have to make sure that you receive the access you requested. You can get a partial approval by the user and not be able to access all the scopes you need. In this example I have implemented the Facebook login flow into a C# .Net desktop application.
+# Facebook Manual Login Flow (WPF)
+A manual login flow for a desktop Facebook application, without the use of any library- natively in the .Net Framework. 
+This is based upon the works orginally created by [Kristofer Källsbo](https://www.hackviking.com/development/facebook-api-login-flow-for-desktop-application/).
 
-Read more about the code: https://www.hackviking.com/development/facebook-api-login-flow-for-desktop-application
+As detialed in the orginal article ensure you have done the following:
+## Prerequirements
+
+>Before you can send the user into the login flow you need to register a Facebook application. Use the "advanced setup" option to create it. After your created your application make a note of the application ID for later. Then go in to the application settings and select the "advanced" tab. Make sure that your set the following:
+
+>Native or desktop app? - Yes
+
+>Client OAuth login - Yes
+
+>Embedded browser OAuth Login - Yes
+
