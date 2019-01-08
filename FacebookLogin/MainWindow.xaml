@@ -1,0 +1,16 @@
+﻿<Window x:Class="FacebookLogin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FacebookLogin"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="212.234" Width="731.383" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox x:Name="AppId" HorizontalAlignment="Left" ToolTip="App Id" Height="37" Margin="28,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227"/>
+        <TextBox x:Name="Scopes" HorizontalAlignment="Left" ToolTip="Scopes"  Height="37" Margin="285,50,0,0" TextWrapping="Wrap" Text="publish_pages,manage_pages,pages_show_list" VerticalAlignment="Top" Width="412"/>
+        <Button Content="Log Me In" HorizontalAlignment="Left" Margin="28,117,0,0" VerticalAlignment="Top" Width="669" Height="38" Click="LoginClick"/>
+        <Label Content="App ID" HorizontalAlignment="Left" Margin="28,19,0,0" VerticalAlignment="Top"/>
+        <Label Content="Scopes" HorizontalAlignment="Left" Margin="285,19,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
